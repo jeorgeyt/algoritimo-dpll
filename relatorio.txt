@@ -1,0 +1,47 @@
+Relatorio do algoritmo dpll 
+
+testes que usei:
+exemplos dado pelo professor do arquivo que esta no classrom 
+arquivo1:
+c Instancia positiva com 10 clausulas e 6 variaveis
+p cnf 6 10
+1 2 0
+-1 2 3 0
+-2 3 4 0
+4 5 6 0
+-1 -2 -3 0
+arquivo2:
+c quinn.cnf
+c
+p cnf 16 18
+1 2 0
+-2 -4 0
+3 4 0
+-4 -5 0
+5 -6 0
+6 -7 0
+6 7 0
+7 -16 0
+8 -9 0
+-8 -14 0
+9 10 0
+9 -10 0
+-10 -11 0
+10 12 0
+11 12 0
+13 14 0
+14 -15 0
+15 16 0
+
+todos com resultados satisfativeis
+tambem fiz a verificação no site fornecido abaixo:
+https://www.inf.ufpr.br/dpasqualin/d3-dpll/
+os mesmos exemplos(exemplo1 e exemplo2) deram ambos o mesmo resultado 
+Fiz o uso de algumas funções pesquisadas da internet para simplificar o codigo como any(), abs(), next() e all() 
+any()-> verifica se ao menos um literal em uma clausulas ja está atribuido em algum dicionario.
+abs()->usado para opter o valor absoluto onde se tem um literal negativo ele retorna o literal positivo
+next()-> avança um interador para o proximo item e retorna esse item 
+all()->verifica se cada elemento da lista tem valor verdade caso ele seja vazio ele retorna true e caso contrario ele retorna falso
+ambas foram utiliazadas no codigo em prol de reduzir o seu tamanho e otimizalo tambem.
+
+

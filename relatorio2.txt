@@ -1,0 +1,21 @@
+Relatorio 2 do algoritmo dpll
+
+Aparentemente na funçao all, onde se cada elemento da lista tem valor verdade
+ caso ele seja vazio ele retorna true e caso contrario ele retorna falso mas havia um erro de logica onde eu estava utilizando 
+"or" ao inves de "and" ou seja mesmo com all não sendo vazio a função estava retornando true por causa da outra função any:
+
+com erro:
+
+ if all(len(clausula) == 0 or any(literal in dicionario for literal in clausula) for clausula in clausulas):
+        return dicionario
+
+sem erro:
+
+if all(len(clausula) == 0 and any(literal in dicionario for literal in clausula) for clausula in clausulas):
+        return dicionario
+
+Aparentemente o erro se esncontrava nessa parte do codigo refiz o teste com o mesmo exemplo que o professor utilizou e deu insatisfastivel 
+refiz o teste para os exemplos a cima e ambos deram satisfativeis como relatei no primeiro relatorio.
+
+
+atenciosamente, josé jeorge!
